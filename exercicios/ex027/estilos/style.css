@@ -1,0 +1,122 @@
+@charset "UTF-8";
+
+/* Paleta de cores
+
+Verde: #49a09d
+Lilás: #5f2c82
+
+*/
+
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body, html{
+    background-color: #5f2c82;
+    height: 100vh;
+    width: 100vw;
+}
+
+main{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+
+}
+
+section#login{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    width: 250px;
+    height: 550px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.450);
+    overflow: hidden;
+
+    transition: width 0.3s, height 0.3s;
+    transition-timing-function: ease;
+}
+
+section#login > div#imagem{
+    display: block;
+    background: #5f2c82 url(../imagens/metal.jpg);
+    background-size: cover;
+    height: 200px;
+    background-position: left bottom;
+    height: 200px;
+
+}
+
+section#login > div#formulario {
+    display: block;
+    padding: 10px;
+}
+
+div#fomulario{
+    text-align: center;
+    margin-bottom: 10px;
+
+}
+
+div#fomulario > p {
+    font-size: 0.8em;
+}
+
+form > input[type=submit]{
+    display: block;
+    margin-left: 2px;
+    font-size: 1em;
+    width: 98%;
+    height: 40px;
+    background-color: #49a09d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form > input[type=submit]:hover {
+    background-color: #2d6462;
+}
+
+form > a.botao{
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    height: 40px;
+    width: 98%;
+    margin-left: 2px;
+    padding-top: 7px;
+    margin-top: 5px;
+    color: #2d6462;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid #49a09d;
+    text-decoration: none;
+
+
+}
+
+form> a.botao > i {
+    font-size: 0.8em;
+}
+
+form > div.campo{
+    background-color: #5f2c82;
+    display: block;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    margin: 5px 0px;
+
+}
+
+div.campo > label {
+    display: none;
+}
