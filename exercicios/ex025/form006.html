@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Exempleto de formulario</h1>
+
+    <form action="casdastro.hpp" method="POST" autocomplete="on">
+
+        <p>
+
+            <label for="icor">Cor:</label>
+            <input type="color" name="cor" id="icor">
+        </p>
+<p>
+    <label for="inviel">Nivel de satisfação</label>
+    <input type="range" name="nivel" id="inivel" min="1" max="5">
+</p>
+
+<p>
+    <label for="ifoto">FOTO DE PERFIL:</label>
+    <input type="file" nome="foto" id="ifoto">
+</p>
+
+<P>
+    <label for="iest">Estado</label>
+
+    <select name="estado" id="iest">
+        <optgroup label="Região Sudeste">
+            <option value="MG">Minas Gerais</option>
+            <option value="RJ">RIO DE JANEIRO</option>
+            <Option value="SP" selected>SÃO PAULO </Option>
+        </optgroup>
+    </select>
+</P>
+
+<p>
+    <label for="iprof">Profissão:</label>
+<input type="text" name="prof" id="iprof" list="lstprof">
+<datalist id="lstprof">
+<option value="ADM">Administrador</option>
+<option value="CONT">Contabilidade  </option>
+<option value="Dev">Desenvolverdor</option>
+<option value="prof">Professor</option>
+</datalist>
+</p>
+
+<p>
+    <label for="imsg">Mensagem:</label> <br>
+    <textarea name="msn" id="imsg" cols="30" rows="10"></textarea>
+</p>
+
+<p>
+    <label for="in1">Numero 1:</label>
+    <input type="number" name="n1" id="in1" min="0" max="50" required oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+</p>
+<p>
+    <label for="in2">Numero 2:</label>
+    <input type="number" name="n2" id="in2" min="0" max="50" required oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+
+</p>
+<p>
+    <label for="isoma">Soma:</label>
+    <output name="soma" id="isoma" >0</output>
+</p>
+
+<p>
+    <label for="is">TEXT</label>
+<input type="bottom">a
+</p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
