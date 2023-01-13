@@ -1,12 +1,104 @@
 @charset "UTF-8" ;
 
 /*
+Seletor 
+(   id = # no css
+    class = . no css )
+
+font-size - tamanho da letra
+font-family - tipo de letra
+blackground-image - colocar imagem no fundo
+bakcground-size - tamanho da imagem na largua
+background-repeat - no-repeat não repeti a imagem
+                    repeat -x
+                    repeat -y
+                    repeat 
+
+background-position - colocar a imagem num lugar do site 
+background-color - colocar uma cor no fundo do site
+
+espessura da linha e tipo de cor da linha
+border - tamanho da borda
+border - espessura
+border - cor
+
+
+padding - margin interna do elemento 
+
 */
 
+ul{
+    text-transform: capitalize;
+    list-style-type: none;
+    list-style-position: outside;
+    border: 1px solid black;
+    background-color: lightpink;
+}
 body{
-    background-color: lightgrey;
+   background-color: lightgrey;
+   font-family: 'Courier New', Courier, monospace;
+
 }
 
-.center{
-    text-align: center;
+h1{
+    font-size: 2em;
+    color: black;
+    background-color: aquamarine;
+    border: 10px solid black;
+    padding: 35px;
+    text-shadow: 1px 1px 2px #000;
+    
 }
+
+pre{
+    background-color: aqua;
+    padding: 2px;
+    margin: auto;
+    border: 1px solid yellow;
+}
+
+.obs{
+    padding: 10px;
+    border: 1px solid yellow;
+    background-color: lightgreen;
+}
+
+p{
+    padding: 35px;
+    border: 1px solid black;
+    background-color: antiquewhite;
+    
+
+}
+
+a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #000;
+    background-color: #800;
+    padding:  15px 15px 15px 15px;
+    display: inline-block;
+}
+
+a:hover{
+    background-color: #f00;
+}
+
+.tabela, tr, td, th{
+    border: #000 slid 1 px;
+    width: 450px;
+    padding: 0px;
+    font-size: 20px;
+}
+
+.td{
+    width: 150px;
+    height: 30px;
+    }
+
+th{
+    background-color: #f00;
+    color: #fff;
+    border-collapse: ;
+}
+

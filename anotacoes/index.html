@@ -8,15 +8,357 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Alguns Codigos de CSS3</h1>
+    <h1>Codigos de CSS3</h1>
 
-    <p>Posso usar o class="NOME DA CLASSE QUE EU QUERO" Exemplo class="text" e chamar ela no CSS com .text</p>
-    <p>Posso usar o id="NOME DO ID QUE EU QUERO"</p>
+    <p>Background-color - Cor de fundo da pagina</p>
 
-    <p class="center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad, quasi error vitae aut perspiciatis non nam deleniti. Veniam, a labore ipsam numquam quidem libero rem impedit nemo molestiae eius quam.</p>
-    <p>Facere neque minima, architecto eligendi, vero repellat dolorum doloribus totam voluptatem dolore labore quod rem quos. Ratione quibusdam in cum? Officiis consequatur est facere quia quo asperiores explicabo nobis nostrum.</p>
-    <p>Facere quos laudantium, nostrum deserunt nulla tempora a beatae eveniet accusantium neque dolor. Nisi consequuntur, delectus pariatur quos eius expedita dicta enim minima exercitationem id a laborum sit, mollitia sed?</p>
+    <p>Background-image - Coloca uma imagem no fundo da pagina</p>
 
+    <p>Background-size - Configurar o tamanho da imagem do fundo</p>
+
+    <p>Background: linear-gradient - Colocar um gradiente no fundo da pagina</p>
+
+    <p class="obs">OBS: background: linear-gradient(to bottom , rgb)</p>
+
+    <p>Background-repeat - Configurar a repetição da imagem </p>
+        <ul>
+            <li>Repeat</li>
+            <li>no-repeat</li>
+            <li>repeat-x</li>
+            <li>repeat-y</li>
+        </ul> 
+
+    <p>Background-postition - Cofigura o piscionamento da imagem de fundo </p>
+
+     <ul>
+        <li>Left top = Esquerda e Cima </li>
+        <li>Left center = Esquerda no centro</li>
+        <li>Left Bottom = Esquerda em baixo</li>
+        <li>Right top = Direita em cima</li>
+        <li>Right center = Direita no Centro</li>
+        <li>Right bottom = Direita em baixo</li>
+        <li>Center top = Centro no topo</li>
+        <li>Center center = Centro no centro</li>
+        <li>Center Bottom = Centro em baixo</li>
+        
+    </ul> 
+
+    <p> Background-orgin - Especifica onde será a origem do poscionamento da imagem de fundo </p>
+        <ul>
+            <li>Border-box = A limagem inicia a esquerda no topo</li>
+            <li>Padding-box = A imagem fica padrão</li>
+            <li>Content-box = A imagem inicia a esquerda no topo do conteudo do conteiner onde a imagem está aplicada</li>
+        </ul>
+    <p>
+        Background-clip - Especifica a area do fundo </p>
+        <ul>
+            <li>Border-box = O fundo inicia a esquerda no topo</li>
+            <li>Padding-box = O fundo inicia a esquerda no topo levando em consideração o padding</li>
+            <li>Content-box = O fundo inicia a esquecerda no topo do conteudo do conteiner</li>
+        </ul>
+
+        
+            <p class="obs">OBS: PARA USAR O Background-clip é preciso colocar as seguites informações <br></p>
+            <pre>
+                Border: 10px solid black;
+                Padding: 10px;
+                Background: #0f0
+                Background-clip: Border-box;
+            </pre>
+      
+    <p>
+        Background-attachment - Como a imagem do fundo se comportara na rolagem da tela.
+    </p>
+    <ul>
+        <li>srcoll = A imagem rola junto com o conteudo</li>
+        <li>fixed = A imagem fica fixa e não rola junto</li>
+        <li>local = A imagem rola junto com conteudo </li>
+    </ul>
+
+        <p class="obs">OBS: Para usar a formatação Background-attachment e preciso as seguintes informações <br></p>
+        
+        <pre>
+            Background-image: url()
+            Background-repeat:no-repeat;
+            Background-postition:center top;
+            Background-attachment: fixed;
+            </pre>
+
+        <p>
+            Border - Configuração de bordar do elemento, podemos definir o estilo da borda, largura e cor
+        </p>
+
+        <ul>
+            <li>solid - Bordas com linhas sólidas</li>
+            <li>dashed - Bordas tracejadas</li>
+            <li>dotted - Bordas pontilhadas</li>
+            <li>double - Bordas com linhas duplas</li>
+            <li>groove - Bordas em estilo 3D</li>
+            <li>ridge - Bordas em estilo 3D com as cores ao contrário da groove</li>
+            <li>inset - Efeito 3d no estilo baixo relevo</li>
+            <li>outset - Efeito 3d no estilo alto relevo</li>
+            <li>none - Sem bordas</li>
+            <li>hidden - Bordas ocultas</li>
+        </ul>
+
+        <p class="obs"> OBS: Para usar a formatação de Border e preciso das seguintes informações, também podemos aplicas as bordas de forma individual ou sej acada borda com sua próproa configuração e também podemos aplicar borda em uma imagem</p>
+        <pre>
+            <strong>border: 10px solid black;</strong>
+            Tamanha da larguda da borda
+            Tipo da linhas
+            Cor da linha
+
+            <strong>Borda em uma imagem</strong>
+            img{
+                border: 10px sloid black
+            }
+
+            <strong>Bordas individuais</strong>
+
+            p{
+                border-top : 1px solid black;
+                border-right: 1px double black;
+                border-bottom: 1px dashed black;
+                border-left: 1px dotted black;
+            }
+        </pre>
+
+        <p>Border-radius - Cantos arrendondados onde odemos trabalhar de forma que cada canto tenha um arredondamento</p>
+
+        <p class="obs"> OBS: Para usar o border-radius basta ultilizar o tamanho ou %. Também podemos fazer que os 4 lados da bordas tenham tamanhos diferentes</p>
+        <PRE>
+            Border-radius: 10px;
+        
+            border-radius: SupEsque, SupDir, InfDir, InfEsque
+            Border-radius: 0px, 30px, 0px, 30px;
+            Para fazer um circulo basta colocar 50%
+        </PRE>
+
+        <p>Border-imagem - Uma imagem para serivir de borda</p>
+
+        <p>Margin - Colocar a imagem que queremos na nossa pagina</p>
+        <ul>
+            <li>Margin-top = Margem superior</li>
+            <li>Margin-right = Margem direita</li>
+            <li>Margin-bottom = Margem inferir</li>
+            <li>Margin-left = Margem esquerda</li>
+        </ul>
+
+
+        <p class="obs">OBS: Devemos colocar uma margin 0px no BODY ou fazer <br><strong>*{ margin: 0 px;}</strong> ou podemos centralizar colocando <strong>margin: auto ;</strong> </p>
+
+        <p>Padding - margens internas - Padding são mas margens iternas dos elementos, padding do mesmo jeito que usamos margin porem na parti internas</p>
+        <ul>
+            <li>Padding-top = Espaçamento interno superior</li>
+            <li>Padding-right = Espaçamento interno a direita</li>
+            <li>padding-bottom = Espaçamento interno inferior</li>
+            <li>Padding-left = Espalamento interno esquerdo</li>
+        </ul>
+        
+        <p>
+            Shadow - Efeito de sombra , existe duas propriedades para trabalharmos com sombras que são : <br> text-shadow e box-shadow
+        </p>
+
+        <pre>
+            text-shadow: 3px 3px 0px #000;
+            box-shadow: 10px 10px 20px #000;
+        </pre>
+
+        <p>
+            Width e Height - Largura e altura - Propriedadades width e heigth são respectivamente para definir largura e altura do elemento. São propriedades de dimensionamento
+        </p>
+
+        <p>
+            Width - define a largura de uma elemento pode usar varias unidades de medidas. <br> <strong>Width: 300px ;</strong>
+        </p>
+
+        <p>
+            Height - define a altura de um elemento pode usar varias unidades de medidas. <br> <strong>Height: 300px ;</strong>
+        </p>
+
+        <p>
+            Max-width e min-width - valor para largura máxima e minima 
+            <br><br> <strong>Max-width: 300px; <br>min-width: 300px;</strong>
+        </p>
+
+        <p>Color - Colocar a color em uma letra </p>
+
+        <p>Text-decoration - Metodo de doecoração do texto tipos linhas </p>
+        <ul>
+            <li>text-decoration: underline - Linha em baixo</li>
+            <li>text-decoration: overline - Linha em cima</li>
+            <li>text-decoration: line-through - Riscado</li>
+            <li>text-decoration: none - tirar linhas de links</li>
+        </ul>
+
+        <p>Text-transform - Podemos configurar letras em maiusculas e minusculas e primeira letras em maiusculas </p>
+
+        <ul>
+            <li>text-transform : uppercase - Converter em maiusculo</li>
+            <li>text-transform : lowercase - Converter em minusculo</li>
+            <li>text-transform : capitalize - Converter as primeira letras em maisculos</li>
+        </ul>
+
+        <p>Text-indent - Configura a endentação da primeira linha, definindo o tamanho do espaçamento do parágrafo</p>
+
+        <p class="obs">OBS: 
+            Usando o text-indent: 50px o texto ira começar com 50 px de afastamento 
+        </p>
+        
+        <p> Line-height -  Espaçamento entre as linhas - Coloca distancia entre as linha sde um texto 
+            <br><br><br>
+            line-height: 2px ; As linhas terão 2px de afastamento 
+        </p>
+
+
+
+
+        <p>Text-align - Alinhamento de texto </p>
+        <ul>
+            <li>Left - Esquerda</li>
+            <li>Right - Direita</li>
+            <li>center - Centro</li>
+            <li>justify - Justificando</li>
+        </ul>
+
+        <p>Font-family - Tipo de letra que você deseja usar</p>
+
+        <p>Font-style - Definir o tipo de texto </p>
+
+        <ul>
+            <li>normal</li>
+            <li>italic</li>
+            <li>olibque</li>
+        </ul>
+
+        <p>Font-size - Podemos definir o tamanho da fonte</p>
+
+        <p>Font-weight - Configurar o peso da fonto  - tipo de negrito</p>
+        <ul>
+            <li>bold</li>
+            <li>bolder</li>
+            <li>lighter</li>
+        </ul>
+
+        <p>Font-variant - Todos os caracteres são convertidos para maisuculos, porem ficam em tamanho menor que a primeira letra</p>
+
+        <p>Formatando Links</p>
+        
+        <pre>
+            text-decoration: none ;
+            font-size: 20px;
+            color: #f00
+        </pre>
+
+        <p class="obs">OBS: Transformando link em botão </p>
+        <pre>
+            
+                a{
+                    text-decoration: none;
+                    font-size: 20px;
+                    color: #000;
+                    background-color: #800;
+                    padding:  15px 15px 15px 15px;
+                    display: inline-block;
+                    }
+
+                a:hover{
+                    background-color: #f00;
+                        }
+
+        </pre>
+
+        <p>Transform -Podemos aplicas transalações </p>
+
+        <ul>
+            <li>Translate() - Esta transformação desloca o elemento para o ponto especifico dentro do parenteses </li>
+            <li>Rotate - Transformação que rotacionao elemento , basta informar o grau da rotação</li>
+            <li>Scale - Transformação relativa ao tamanho aumenta ou diminui</li>
+            <li>skewX - Permite inclinar o elemento na horizontal  </li>
+            <li>skewY - Permite inclinar o elemento na vertical </li>
+        </ul>
+
+        <p>Transform-orgin - Podemos especificar o ponto de origem ou de fixação para as transformações </p>
+
+        <p>Formatação Comum de tabelas</p>
+
+        <pre>
+            .tabela, tr, td, th{
+                border: #000 slid 1 px;
+                width: 450px;
+                padding: 0px;
+                font-size: 20px;
+            }
+            
+            .td{
+                width: 150px;
+                height: 30px;
+                }
+            
+            th{
+                background-color: #f00;
+                color: #fff;
+                
+            }
+        </pre>
+
+        <p> Vertical-align - Esta propriedade formata o alimento vertial do conteudo da tabela</p>
+
+        <ul>
+            <li>Vertical-align: top - Alinha o texto na parte de cima</li>
+            <li>vertical-aligh: middle - Alinha o texto no meio</li>
+            <li>vertical-aligh: bottom - Alinha o texto na parte de baixo</li>
+        </ul>
+
+        <p>Border-collapse - Formata o distaciamento entra as celulas da tabela os</p>
+        <ul><li>border-collapse: collapse - Células sem separação</li>
+        <li>border-collapse: separate - Células separadas</li></ul>
+
+        <p>Border-spacing - Formatar o espaçamento entre as celulas</p>
+
+        <p>Display - Propriedade indica como um elemento será exibido </p>
+
+        <p class="obs"><strong>Display : block</strong> <br><br> Um elemento que tem o display configurado como <STRONG>block</STRONG> sempre inicia em uma nova linha não aceita elemntos na mesma linha que ele ou seja quebra de linha após o elemento  e sua area ocupa toda a linha onde ele é inserido <br><br> Elemento com <strong>display:block</strong> padrão <br>
+        <.div.> <br> <.p.> <br> <.form.> <br><.header.> <br> <.footer.> <br> <.section.> <br> <.table></p>
+            <p class="obs"><strong>Display: inline</strong> <br> Os elementos configurados com <strong>display:inline</strong> não iniciam em uma nova linha nem quebram de linha após o elemento eles não ocupam a linha inteira, somento o espaço de seu conteúdo. <br>
+                <br>
+            Exemplos de alguns elementos com <strong>Display: inline</strong> <br>
+            <.span> <br> <.a.> <br> <.img.>  
+            </p>
+
+            <p class="obs"> <strong>Display : nome </strong> <br> Este valor para propriedade display pode ser usado para ocultar o elemento pelo javascript</p>
+
+            <p class="obs"><strong>Display : inline-block </strong>- Parecido com inline, so que preserva o tamanho configurado do elemento </p>
+
+            <p class="obs"><strong>Display: inline-table</strong> Elemento é exibido como uma tablea, não inciam em uma nova linha nem quebra de linha após o elemento, ele não ocupa uma linha intenra somente o espçao do conteudo <br> <.table.></p>
+
+            <p> Position - A propriedade especifica como um elemento será posicionado na tela <br> Muitos programadores associam a propriedade position somento ao elemento <.div.> mas a verdade é que podemos utilizar em muitos outros elemento como  <.img.> e <.p.></p>
+            <ul><li>Static - Valor padrão de todos os elemento, os elemento snão podem ser controlado spor top e left e não tem seu posiconamtento afetado.</li> <br>
+            <li>Relative - Tem seu posiconamento left e top relacionado como o elemento anterios </li> <br>
+            <li>Fixed - Neste posiconamento o elemento é posicionado em relação a janela independete se esteja dentro de outro ou não</li> <br>
+            <li>Absolute - Tem seu posicionamento left e top relacionado com o elemento pai e não com o elemento anterior</li></ul>
+
+            <p>Float - Esta prorpeidade especifica se o elemento vai flutuar ou não</p>
+
+            <ul> <li>Float : left - posicionar a imagem a esquerda </li>
+            <br><li>Float : right - posicionar a imagem a direita</li></ul>
+
+            <p>Afeter e before</p>
+
+
+
+
+
+
+
+
+
+
+
+
+<br>
     <a href="#">Ir para próxima pagina</a>
+
+    
 </body>
 </html>
