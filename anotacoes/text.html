@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+ul{
+    background-color: black;
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+
+li{
+    float: left;
+} 
+
+li a, .dropdown .dropbtn{
+    display: inline-block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    text-align: center;
+}
+
+li a:hover , .dropdown:hover .dropbtn{
+    background-color: red;
+}
+
+
+li..dropdown{
+    display: inline-block;
+}
+
+.dropdown-content{
+    position: absolute;
+    background: white;
+    width: 150px;
+    display: none;
+}
+
+.dropdown-content a{
+    color: black;
+    display: block;
+    text-align: left;
+    text-decoration: none;
+    border: 1px solid bisque;
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+.dropdown-content a:hover{
+    color: white;
+}
+    </style>
+</head>
+<body>
+    <h1 class="borda">Meu primeiro CSS</h1>
+    <UL>
+        <LI><a href="#">Link</a></LI>
+        <LI><a href="#">Link</a></LI>
+        <LI><a href="#">Link</a></LI>
+        <LI class="dropdown"> 
+            <a class="dropbtn" href="#">Link</a>
+        <div class="dropdown-content">
+
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        </div>
+        
+    </LI>
+    </UL>
+</body>
+</html>
