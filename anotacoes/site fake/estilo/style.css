@@ -24,7 +24,7 @@ body{
 
 .logo{
     flex: 20%;
-    text-align: center;
+    text-align: left;
     margin-left: 10%;
 }
 
@@ -71,20 +71,128 @@ body{
 .header{
     display: flex;
     flex-flow: row wrap;
-    
-    background-color: aliceblue;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding-top: 100px;
 }
 
 .headline{
     margin-left: 10%;
     flex: 40%;
-    border: 1px solid black;
+   
 
+}
+
+.contact-btn{
+    display: inline-block;
+    background-color: #ff2978;
+    padding: 20px;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 5px;
+    text-decoration: none;
+
+}
+
+.contact-btn:hover{
+    background: #180f4a;
+}
+
+.headline p{
+    color: grey;
+    text-align: left;
+}
+
+.headline h2{
+    font-weight: 900;
+    font-size: 20px;
+    color: #180f4a;
+    padding: 0;
+    margin: 0;
 }
 
 .img-headline{
     margin-right: 10%;
     flex: 40%;
-    border: 1px solid black;
+    
     text-align: center;
 }
+
+section{
+    margin-top: 80px;
+    
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 5%;
+    text-align: center;
+}
+
+section h2{
+    width: 100%;
+    font-size: 50px;
+    margin: 0;
+    font-family: 'Lobster', cursive;
+    font-weight: bold;
+    color: #180f4a;
+}
+
+.servico{
+    display: inline-block;
+    margin-top: 5%;
+}
+
+.card{
+    display: inline-block;
+    width: 30%;
+    padding: 20px;
+    margin: 1%;
+    border: 1px solid #180f4a;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.card:hover{
+    background-color: #ff2978;
+    color: white;
+    padding: 40px;
+
+}
+
+.card:hover img{
+    display: none;
+}
+.texto-oculto{
+    display: none;
+}
+
+.card:hover .card-text{
+    display: block;
+}
+
+footer{
+    margin-top: 100px;
+    height: 400px;
+    background-image: linear-gradient(180deg, #180f4a , #090422, black);
+    text-align: center;
+    border-top: 5px solid black;
+}
+
+.logo-rodape{
+    padding: 100px;
+
+
+}
+
+.agencia{
+    font-family: 'Lobster', cursive;
+    color: white;
+    font-size: 34px;
+    }
+
+    .whats{
+        position: fixed;
+        bottom: 5px;
+        right: 5px;
+        width: 100px;
+    }
