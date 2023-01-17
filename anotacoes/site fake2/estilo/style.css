@@ -234,14 +234,41 @@
                 transition: transform 0.5s, border 0.5s;
             }
 
-          
+        
 
-            hr{
-    display: block;
-    unicode-bidi: isolate;
-    margin-block-start: 0.5em;
-    margin-block-end: 0.5em;
-    margin-inline-start: auto;
-    margin-inline-end: auto;
-    overflow: hidden;
-            }
+        li{
+            list-style: none;
+        }
+
+             a{
+        text-decoration: none;
+       }
+
+
+    .container {
+        background-color: var(--cor3);
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 200px;
+      }
+      .box{
+        text-align: center;
+        align-self: flex-start;
+      }
+
+      footer{
+        flex:70%;
+        text-align:left;
+        padding:40px;
+    }
+
+    .rodape a{
+            margin-left: 60px;
+            color: lightgrey;
+            text-decoration: none;
+            font-size: 14px;
+            padding:20px 5px; 
+    }
+    
